@@ -59,25 +59,25 @@
     <!-- Navbar section end -->
 
     <!-- Banner section start -->
-    <div class="banner position-relative">
+    <div class="banner justify-content-center position-relative">
         <div class="container">
             <div class="row">
                <div class="col-sm-6 col-lg-6 ms-0 ms-sm-4  text-white position-absolute top-20">
-                <h1>"The best place to find <br>
+                <h1 class="">"The best place to find <br>
                     the cheapest airfares"</h1>
                     <span class="fw-bold ms-4">- every signle time</span>
                </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-9 position-absolute bottom-0 mb-4 p-2">
+                <div class="col-md-9 bg-purple3 position-absolute bottom-0 mb-4 p-2">
                     <nav class="mb-2">
-                        <div class="nav nav-tabs border-0 mt-2 bg-purple justify-content-center" id="nav-tab" role="tablist">
-                            <button class="nav-link  rounded-0  border-0 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                        <div class="nav nav-tabs border-0 mt-2 justify-content-center" id="nav-tab" role="tablist">
+                            <button class=" main-btn nav-link text-orange rounded-0  border-0 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
                                 <i class="fa fa-plane me-2" aria-hidden="true"></i>Flights
                             </button>
-                            <button class="nav-link rounded-0 border-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                            <button class=" main-btn nav-link text-orange rounded-0 border-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
                                 <i class="fa fa-hotel me-2" aria-hidden="true"></i>Hotels</button>
-                            <button class="nav-link  rounded-0 border-0" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                            <button class=" main-btn nav-link text-orange rounded-0 border-0" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
                                 <i class="fa fa-car me-2" aria-hidden="true"></i>Cars</button>
                         </div>
                     </nav>
@@ -86,63 +86,134 @@
                             <form action="" class="form-group">
                                 <div class="row g-1">
                                     <div class="col-sm-6 col-md-2">
-                                      <input type="text" class="form-control bg-transparent" placeholder="Enter origin city" aria-label="origin">
+                                      <input type="text" class="form-control" placeholder="Enter origin city" aria-label="origin">
                                     </div>
                                     <div class="col-sm-6 col-md-2">
-                                      <input type="text" class="form-control bg-transparent" placeholder="Enter destination city" aria-label="destination">
+                                      <input type="text" class="form-control" placeholder="Enter destination city" aria-label="destination">
                                     </div>
                                     <div class="col-sm-6 col-md-2">
-                                      <input type="date" class="form-control bg-transparent"  aria-label="script">
+                                      <input type="date" class="form-control" placeholder="Enter starting date"  aria-label="script">
                                     </div>
                                     <div class="col-sm-6 col-md-2">
-                                      <input type="date" class="form-control bg-transparent"  aria-label="edate">
+                                      <input type="date" class="form-control" placeholder="Enter end date" aria-label="edate">
                                     </div>
                                     <div class="col-sm-6 col-md-2">
-                                      <input type="text" class="form-control bg-transparent" placeholder="passanger" aria-label="Last name">
+                                      <input type="text" class="form-control" placeholder="passanger" aria-label="Last name">
                                     </div>
                                     <div class="col-sm-6 col-md-2">
-                                      <input type="button" class="form-control bg-orange border-0 rounded-circle" value="search" aria-label="search">
+                                      <input type="button" class=" btn form-control bg-orange border-0 " value="search" aria-label="search">
                                     </div>
                                   </div>
+
+                                  <div class="row g-5">
+                                    <div class="col">
+                                        <div class="last-row justify-content-center py-2" style="display: flex;color: #ffffff; padding: 2px;">
+                                            <div class="span" style="border-bottom: 1px dotted aqua;">
+                                                <i class="fa-solid fa-rotate" style="color: #ffffff;" id="tripicon"></i>&nbsp;&nbsp; <span class="dis">Trip type:</span>
+                                                <select style="background-color: transparent; border: 0px; color: #DC6124; font-size: 16px;">
+                                                    <option selected> Return trip</option>
+                                                    <option selected>One way trip</option>
+                                                </select>
+                                            </div>
+                                            <span class="span" style="border-bottom: 1px dotted aqua;">
+                                                <i class="fa-solid fa-ticket" style="color: #ffffff;transform: rotate(-45deg);"></i>&nbsp;&nbsp; <span class="dis">Ticket class:</span>
+                                                <select style="background-color:transparent;border: 0px;color: #DC6124; font-size: 16px;">
+                                                    <option selected>Economy</option>
+                                                    <option>Bussiness</option>
+                                                    <option>First</option>
+                                                </select>
+                                            </span>
+                                           <span class="span" id="span"> &nbsp;&nbsp; Direct Flights Only &nbsp;&nbsp;&#9744;</span>
+                                           <span class="span" id="span"> &nbsp;&nbsp;Include nearly airports &nbsp;&nbsp;&#9744;</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
                           <form action="" class="form-group">
-                            <div class="row g-1">
+                            <div class="row g-1 justify-content-center">
                                 <div class="col-sm-6 col-md-2">
-                                  <input type="date" class="form-control bg-transparent"  aria-label="script">
+                                  <input type="date" class="form-control"  placeholder="Enter starting date"  aria-label="script">
                                 </div>
                                 <div class="col-sm-6 col-md-2">
-                                  <input type="date" class="form-control bg-transparent"  aria-label="edate">
+                                  <input type="date" class="form-control"  placeholder="Enter end date"  aria-label="edate">
                                 </div>
                                 <div class="col-sm-6 col-md-2">
-                                  <input type="text" class="form-control bg-transparent" placeholder="Enter people" aria-label="Last name">
+                                  <input type="text" class="form-control" placeholder="Enter people" aria-label="Last name">
                                 </div>
                                 <div class="col-sm-6 col-md-2">
-                                  <input type="button" class="form-control bg-orange border-0 rounded-circle" value="search" aria-label="search">
+                                  <input type="button" class="btn form-control bg-orange border-0 " value="search" aria-label="search">
                                 </div>
                               </div>
+                              <div class="row g-1">
+                                <div class="col">
+                                    <div class="last-row justify-content-center py-2" style="display: flex;color: #ffffff; padding: 2px;">
+                                        <div class="span" style="border-bottom: 1px dotted aqua;">
+                                            <i class="fa-solid fa-rotate" style="color: #ffffff;" id="tripicon"></i>&nbsp;&nbsp; <span class="dis">Trip type:</span>
+                                            <select style="background-color: transparent;border: 0px;color: #DC6124; font-size: 16px;">
+                                                <option selected> Return trip</option>
+                                                <option selected>One way trip</option>
+                                            </select>
+                                        </div>
+                                        <span class="span" style="border-bottom: 1px dotted aqua;">
+                                            <i class="fa-solid fa-ticket" style="color: #ffffff;transform: rotate(-45deg);"></i>&nbsp;&nbsp; <span class="dis">Ticket class:</span>
+                                            <select style="background-color:transparent;border: 0px;color: #DC6124; font-size: 16px;">
+                                                <option selected>Economy</option>
+                                                <option>Bussiness</option>
+                                                <option>First</option>
+                                            </select>
+                                        </span>
+                                       <span class="span" id="span"> &nbsp;&nbsp; Direct Flights Only &nbsp;&nbsp;&#9744;</span>
+                                       <span class="span" id="span"> &nbsp;&nbsp;Include nearly airports &nbsp;&nbsp;&#9744;</span>
+                                    </div>
+                                </div>
+                            </div>
                         </form>
                         </div>
                         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
                           <form action="" class="form-group">
-                            <div class="row g-1">
+                            <div class="row g-1 justify-content-center">
                                 <div class="col-sm-6 col-md-2">
-                                  <input type="text" class="form-control bg-transparent" placeholder="Enter origin city" aria-label="origin">
+                                  <input type="text" class="form-control" placeholder="Enter origin city" aria-label="origin">
                                 </div>
                                 <div class="col-sm-6 col-md-2">
-                                  <input type="date" class="form-control bg-transparent"  aria-label="script">
+                                  <input type="date" class="form-control"  placeholder="Enter starting date"  aria-label="script">
                                 </div>
                                 <div class="col-sm-6 col-md-2">
-                                  <input type="date" class="form-control bg-transparent"  aria-label="edate">
+                                  <input type="date" class="form-control"  placeholder="Enter end date"  aria-label="edate">
                                 </div>
                                 <div class="col-sm-6 col-md-2">
-                                  <input type="text" class="form-control bg-transparent" placeholder="passanger" aria-label="Last name">
+                                  <input type="text" class="form-control" placeholder="passanger" aria-label="Last name">
                                 </div>
                                 <div class="col-sm-6 col-md-2">
-                                  <input type="button" class="form-control bg-orange border-0 rounded-circle" value="search" aria-label="search">
+                                  <input type="button" class=" btn form-control bg-orange border-0 " value="search" aria-label="search">
                                 </div>
                               </div>
+                              
+                              <div class="row g-1">
+                                <div class="col">
+                                    <div class="last-row justify-content-center py-2" style="display: flex;color: #ffffff; padding: 2px;">
+                                        <div class="span" style="border-bottom: 1px dotted aqua;">
+                                            <i class="fa-solid fa-rotate" style="color: #ffffff;" id="tripicon"></i>&nbsp;&nbsp; <span class="dis">Trip type:</span>
+                                            <select style="background-color: transparent;border: 0px;color: #DC6124; font-size: 16px;">
+                                                <option selected> Return trip</option>
+                                                <option selected>One way trip</option>
+                                            </select>
+                                        </div>
+                                        <span class="span" style="border-bottom: 1px dotted aqua;">
+                                            <i class="fa-solid fa-ticket" style="color: #ffffff;transform: rotate(-45deg);"></i>&nbsp;&nbsp; <span class="dis">Ticket class:</span>
+                                            <select style="background-color:transparent;border: 0px;color: #DC6124; font-size: 16px;">
+                                                <option selected>Economy</option>
+                                                <option>Bussiness</option>
+                                                <option>First</option>
+                                            </select>
+                                        </span>
+                                       <span class="span" id="span"> &nbsp;&nbsp; Direct Flights Only &nbsp;&nbsp;&#9744;</span>
+                                       <span class="span" id="span"> &nbsp;&nbsp;Include nearly airports &nbsp;&nbsp;&#9744;</span>
+                                    </div>
+                                </div>
+                            </div>
                         </form>
                         </div>
                     </div>
@@ -154,45 +225,45 @@
 
     <!-- Fun Section Start -->
     <div class="fun bg-dark py-5 text-white">
-      <h2 class="text-center">SOME FUN WE COVERED</h2>
+      <h2 class="text-center pb-4">SOME FUN WE COVERED</h2>
       <div class="container">
         <div class="row">
-          <div class="col-lg-2 col-md-4 col-6  ">
+          <div class="block col-lg-2 col-md-4 col-6  ">
               <div class="bg-dark p-4 my-1 text-center" >
                 <i class="fa fa-bicycle" aria-hidden="true"></i>
                 <h5>5670 M</h5>
                 <h5 style="font-size: 15px;">CYCLING TRAKE</h5>
               </div>
           </div>
-          <div class="col-lg-2 col-md-4 col-6  ">
+          <div class=" block col-lg-2 col-md-4 col-6  ">
               <div class="bg-dark p-4 my-1 text-center">
                 <i class="fa fa-road" aria-hidden="true"></i>
                 <h5>480 M</h5>
                 <h5 style="font-size: 15px;">DISTANCE COVERED</h5>
               </div>
           </div>
-          <div class="col-lg-2 col-md-4 col-6  ">
+          <div class="block col-lg-2 col-md-4 col-6  ">
               <div class="bg-dark p-4 my-1 text-center">
                 <i class='fas fa-hiking'></i>                
                 <h5>5680 M</h5>
                 <h5 style="font-size: 15px;">ATTITUDE HIKED</h5>
               </div>
           </div>
-          <div class="col-lg-2 col-md-4 col-6  ">
+          <div class="block col-lg-2 col-md-4 col-6  ">
               <div class="bg-dark p-4 my-1 text-center">
                 <i class="fa-solid fa-sailboat" aria-hidden="true"></i>
                 <h5>180 M</h5>
                 <h5 style="font-size: 15px;">SAILING DISANCE</h5>
               </div>
           </div>
-          <div class="col-lg-2 col-md-4 col-6  ">
+          <div class="block col-lg-2 col-md-4 col-6  ">
               <div class="bg-dark p-4 my-1 text-center">
                 <i class="fa-brands fa-space-awesome image"></i>
                 <h5>570 M</h5>
                 <h5 style="font-size: 15px;">SPENT ADVENTURE</h5>
               </div>
           </div>
-          <div class="col-lg-2 col-md-4 col-6  ">
+          <div class="block col-lg-2 col-md-4 col-6  ">
               <div class="bg-dark p-4 my-1 text-center">
                 <i class="fa-solid fa-route"></i>                
                 <h5>567 M</h5>
@@ -205,19 +276,19 @@
     <!-- Fun Section End -->
 
     <!-- NewsLettter Section Start -->
-    <div class="newsLetter">
+    <div class="newsLetter pb-4">
       <div class="container">
         <div class="row">
           <div class="col-lg-3"></div>
           <div class="col-lg-9 text-center">
-              <h2 class="fw-bold py-5 text-white">SUBSCRIBE FOR OUR TRAVEL NEWSLETTERS</h2>
+              <h2 class="fw-bold pt-5 text-white">SUBSCRIBE FOR OUR TRAVEL NEWSLETTERS</h2>
               <p class="text-white mt-4 px-md-5 mx-sm-3">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur itaque numquam possimus odit magni commodi voluptatibus amet distinctio esse nulla, voluptas necessitatibus facilis, quia delectus ducimus quae porro qui fuga.
               </p>
-              <form class="m-4" >
-                <input type="email" class=" w-sm-50 opacity-25 border border-white px-5 py-2 my-3" placeholder="Enter your email address.....">
-                <input type="button" value="search" class="px-5 py-2 ms-2 border-0">
-            </form>
+              <form>
+                <input type="email" class="input opacity-25 border border-white px-5 py-2 my-3" placeholder="Enter your email address.....">
+                <input type="button" value="search" class="btn px-5 py-2 ms-2 border-0">
+              </form>
           </div>
         </div>
       </div>
@@ -368,7 +439,7 @@
           <p class="mb-4 fw-bold fs-6">GET A PROFESSIONAL HELP</p>
         </div>
         <hr style="width: 100px; size: 10px; color: rgb(226, 183, 226);">
-        <div class="row">
+        <div class="row form">
           <form class="mb-4 g-3">
             <select id="form" class="col-lg-2 col-sm-4 col-12 p-2">
               <option value="Travel Purpose"  id="option">Travel Purpose</option>
@@ -377,7 +448,7 @@
               <option value="sports" id="option">Sports</option>
             </select>
     
-            <input type="date" name="date" placeholder="Travel Date" id="option" class="col-lg-2 col-sm-4 col-12 p-2 m-3">
+            <input type="date" name="date" placeholder="Travel Date" id="option" class="col-lg-2 col-sm-4 col-12 p-2">
     
             <select  id="form" class="col-lg-2 col-sm-4 col-12 p-2">
               <option value="no. off people" id="option">No. of people</option>
@@ -388,8 +459,8 @@
               <option value="5" id="option">5</option>
             </select>
     
-            <input type="email" placeholder="Your Email" id="option" class="col-lg-2 col-sm-4 col-12 p-2 m-3">
-          <input type="button" value="CALCULATE NOW" class="col-lg-2 col-sm-8 col-12 p-2 bg-orange">
+            <input type="email" placeholder="Your Email" id="option" class="col-lg-2 col-sm-4 col-12 p-2">
+          <input type="button" value="CALCULATE NOW" class="border-0 col-lg-2 col-sm-8 col-12 p-2 bg-orange">
           
           <img src="./assets/img/estimate.png" alt="estimate" class="img img-fluid position-absolute">
 
@@ -400,13 +471,13 @@
     <!-- Estimate Section End -->
 
     <!-- Blog Section Start -->
-    <div class="blog py-5">
+    <div class="blog py-3">
       <div class="container">
-        <div class="row">
+        <div class="row ">
           <h3 class="fw-bold text-center ">LATEST BLOG</h3>
-          <P class="fw-bold text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam dicta neque pariatur recusandae minima in distinctio quasi. Magni eveniet quas voluptas saepe inventore quos corrupti libero minima voluptatem eos?</P>
+          <P class="main fw-bold text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam dicta neque pariatur recusandae minima in distinctio quasi. Magni eveniet quas voluptas saepe inventore quos corrupti libero minima voluptatem eos?</P>
         </div>
-        <div class="row my-5">
+        <div class="row mt-5">
             <div class="col-lg-6">
               <div class="row text-center">
                 <div class="col-sm-4">
@@ -414,7 +485,7 @@
                 </div>
                 <div class="col-sm-8">
                   <h5>Feb 01, 2016</h5>
-                  <h2>10 THINGS TODO BEFORE TRAVEL</h2>
+                  <h4>10 THINGS TODO BEFORE TRAVEL</h4>
                   <hr width="100px" style="color: red;">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repellendus sunt doloribus sequi sit sed quisquam cumque magnam praesentium beatae.</p>
                 </div>
@@ -427,7 +498,7 @@
                 </div>
                 <div class="col-sm-8">
                   <h5>jan 23, 2016</h5>
-                  <h2>SAY NO TO LAZY LIFE</h2>
+                  <h4>SAY NO TO LAZY LIFE</h4>
                   <hr width="100px" style="color: red;">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repellendus sunt doloribus sequi sit sed quisquam cumque magnam praesentium beatae.</p>
                 </div>
@@ -492,43 +563,43 @@
             <ul class="list-unstyled">
               <li>
                 <i class="fa-solid fa-location-dot text-secondary"></i>
-                <span class="text-secondary">Flights to</span> <a href="javascript:void()" class="text-white text-decoration-none">NewYork,</a>United States
+                <span class="text-secondary">Flights to</span> <a href="javascript:void()" class="text-white text-decoration-none">NewYork,</a> <span class="text-secondary">United States</span>
               </li>
               <li>
                 <i class="fa-solid fa-location-dot text-secondary"></i>
-                <span class="text-secondary">Flights to</span> <a href="javascript:void()" class="text-white text-decoration-none">London,</a>United Kingdom
+                <span class="text-secondary">Flights to</span> <a href="javascript:void()" class="text-white text-decoration-none">London,</a><span class="text-secondary">United Kingdom</span>
               </li>
               <li>
                 <i class="fa-solid fa-location-dot text-secondary"></i>
-                <span class="text-secondary">Flights to</span> <a href="javascript:void()" class="text-white text-decoration-none">Orlando,</a>United States
+                <span class="text-secondary">Flights to</span> <a href="javascript:void()" class="text-white text-decoration-none">Orlando,</a><span class="text-secondary">United States</span>
               </li>
               <li>
                 <i class="fa-solid fa-location-dot text-secondary"></i>
-                <span class="text-secondary">Flights to</span> <a href="javascript:void()" class="text-white text-decoration-none">Bangkok,</a>Thailand
+                <span class="text-secondary">Flights to</span> <a href="javascript:void()" class="text-white text-decoration-none">Bangkok,</a><span class="text-secondary">Thailand</span>
               </li>
               <li>
                 <i class="fa-solid fa-location-dot text-secondary"></i>
-                <span class="text-secondary">Flights to</span> <a href="javascript:void()" class="text-white text-decoration-none">Copenhagen,</a>Denmark
+                <span class="text-secondary">Flights to</span> <a href="javascript:void()" class="text-white text-decoration-none">Copenhagen,</a><span class="text-secondary">Denmark</span>
               </li>
               <li>
                 <i class="fa-solid fa-location-dot text-secondary"></i>
-                <span class="text-secondary">Flights to</span> <a href="javascript:void()" class="text-white text-decoration-none">Paris,</a>France
+                <span class="text-secondary">Flights to</span> <a href="javascript:void()" class="text-white text-decoration-none">Paris,</a><span class="text-secondary">France</span>
               </li>
               <li>
                 <i class="fa-solid fa-location-dot text-secondary"></i>
-                <span class="text-secondary">Flights to</span> <a href="javascript:void()" class="text-white text-decoration-none">Singpore,</a>Singapore
+                <span class="text-secondary">Flights to</span> <a href="javascript:void()" class="text-white text-decoration-none">Singpore,</a><span class="text-secondary">Singapore</span>
               </li>
               <li>
                 <i class="fa-solid fa-location-dot text-secondary"></i>
-                <span class="text-secondary">Flights to</span> <a href="javascript:void()" class="text-white text-decoration-none">Istanbul,</a>Turkey
+                <span class="text-secondary">Flights to</span> <a href="javascript:void()" class="text-white text-decoration-none">Istanbul,</a><span class="text-secondary">Turkey</span>
               </li>
               <li>
                 <i class="fa-solid fa-location-dot text-secondary"></i>
-                <span class="text-secondary">Flights to</span> <a href="javascript:void()" class="text-white text-decoration-none">Hong Kong,</a>Hong kong
+                <span class="text-secondary">Flights to</span> <a href="javascript:void()" class="text-white text-decoration-none">Hong Kong,</a><span class="text-secondary">Hong kong</span>
               </li>
               <li>
                 <i class="fa-solid fa-location-dot text-secondary"></i>
-                <span class="text-secondary">Flights to</span> <a href="javascript:void()" class="text-white text-decoration-none">Dubai,</a>United Arab Emirates
+                <span class="text-secondary">Flights to</span> <a href="javascript:void()" class="text-white text-decoration-none">Dubai,</a><span class="text-secondary">United Arab Emirates</span>
               </li>
             </ul>
           </div>
@@ -610,17 +681,19 @@
             <img src="./assets/img/foot1.png" width="70px" alt="">
           </div>
           <div class="col-sm-10">
-            <div class="row" style="font-size: 12px;">
-            <div class="col">About Us</div>
-            <div class="col">Jobs</div>
-            <div class="col">Press</div>
-            <div class="col">Affilate</div>
-            <div class="col">Terms of Use</div>
-            <div class="col">Privacy Policy</div>
-            <div class="col">Cookies</div>
-            <div class="col">Airlines</div>
-            <div class="col">Aaps</div>
-            <div class="col">Helps</div>
+            <div class="row last" style="font-size: 12px;">
+              <ul class="list-unstyled d-md-flex mt-2">
+                <li class="col">About Us</li>
+                <li class="col">Jobs</li>
+                <li class="col">Press</li>
+                <li class="col">Affilate</li>
+                <li class="col">Terms of Use</li>
+                <li class="col">Privacy Policy</li>
+                <li class="col">Cookies</li>
+                <li class="col">Airlines</li>
+                <li class="col">Aaps</li>
+                <li class="col">Helps</li>
+              </ul>
             </div>
             <div class="row text-center">
               <p class="pt-3" style="font-size: 16px;">Momondo.co.uk is a free, independent global travel search site comparing billions of cheap flights, hotels and car hire deals.</p>
